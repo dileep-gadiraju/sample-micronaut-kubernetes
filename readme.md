@@ -33,3 +33,9 @@ Our sample microservices-based system consists of the following modules:
 The following picture illustrates the architecture described above including Kubernetes objects.
 
 <img src="https://piotrminkowski.files.wordpress.com/2020/01/guide-to-micronaut-kubernetes-architecture.png" title="Architecture1">
+
+
+## New Features to be added
+- **Kafka Integration**
+- **Health Checks and K8s probes**
+- 
