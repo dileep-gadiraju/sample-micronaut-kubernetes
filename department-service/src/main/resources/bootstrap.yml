@@ -3,6 +3,8 @@ micronaut:
     name: department
   config-client:
     enabled: true
+  server:
+    port: 8090
 
 kubernetes:
   client:

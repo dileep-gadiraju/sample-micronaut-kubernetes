@@ -35,7 +35,7 @@ The following picture illustrates the architecture described above including Kub
 <img src="https://piotrminkowski.files.wordpress.com/2020/01/guide-to-micronaut-kubernetes-architecture.png" title="Architecture1">
 
 ## App links
-- **[Health Check Endpoints](http://localhost:8080/health)**
+- **[Health Check Endpoints](http://localhost:8090/health)**
 ## New Features to be added
 - **Kafka Integration**
 - **Health Checks and K8s probes**
