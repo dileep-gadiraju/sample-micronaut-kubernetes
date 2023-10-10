@@ -13,3 +13,40 @@ kubernetes:
       enabled: true
       labels:
         - app: department
+
+kafka:
+  bootstrap:
+    servers: localhost:9092
+  timeout: 10000
+  concurrency: 1
+  properties:
+    sasl:
+      mechanism: PLAIN
+    security:
+      protocol: SASL_SSL
+  health:
+    enabled: true
+  consumers:
+    default:
+      session:
+        timeout:
+          ms: 1000
+
+endpoints:
+  all:
+    enabled: true
+    sensitive: false
+  stop:
+    enabled: false
+  # Health Check/Probes Endpoints
+  health:
+    url:
+      enabled: true
+    sensitive: false
+    details-visible: ANONYMOUS
+    status:
+      http-mapping:
+        DOWN: 503
+    disk-space:
+      enabled: true
+      threshold: 90MB

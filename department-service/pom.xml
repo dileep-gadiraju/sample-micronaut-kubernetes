@@ -35,6 +35,10 @@
             <artifactId>micronaut-management</artifactId>
         </dependency>
         <dependency>
+            <groupId>io.micronaut.kafka</groupId>
+            <artifactId>micronaut-kafka</artifactId>
+        </dependency>
+        <dependency>
             <groupId>io.micronaut.mongodb</groupId>
             <artifactId>micronaut-mongo-sync</artifactId>
         </dependency>
@@ -47,6 +51,7 @@
             <artifactId>logback-classic</artifactId>
             <scope>runtime</scope>
         </dependency>
+
         <dependency>
             <groupId>io.micronaut.test</groupId>
             <artifactId>micronaut-test-junit5</artifactId>
