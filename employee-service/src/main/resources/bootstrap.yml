@@ -23,4 +23,5 @@ mongodb:
   uri: mongodb://localhost:27017/local
   database: local
   collection: employees
+  retryWrites: false
 
