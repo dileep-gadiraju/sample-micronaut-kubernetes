@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "d1ac0236-ddb2-4e9b-9f3b-9f214cd6dd0e",
+		"name": "sample-micronaut-kubernetes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2978364"
+	},
+	"item": [
+		{
+			"name": "departments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":1,\n    \"organizationId\":1,\n    \"name\":\"C&H\",\n    \"employees\":\n        [\n            {\n            \"id\":1,\n            \"organizationId\":1,\n            \"departmentId\":1,\n            \"name\":\"Dileep Gadiraju\",\n            \"age\":43,\n            \"position\":\"EA\"\n            }\n        ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8091/departments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "departments",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":1,\n    \"organizationId\":1,\n    \"name\":\"C&H\",\n    \"employees\":\n        [\n            {\n            \"id\":1,\n            \"organizationId\":1,\n            \"departmentId\":1,\n            \"name\":\"Dileep Gadiraju\",\n            \"age\":43,\n            \"position\":\"EA\"\n            }\n        ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8091/departments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employees",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":1,\n    \"organizationId\":1,\n    \"departmentId\":1,\n    \"name\":\"Dileep Gadiraju\",\n    \"age\":43,\n    \"position\":\"EA\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8092/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8092",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employees",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":1,\n    \"organizationId\":1,\n    \"departmentId\":1,\n    \"name\":\"Dileep Gadiraju\",\n    \"age\":43,\n    \"position\":\"EA\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8092/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8092",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "organizations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/organizations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"organizations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "organizations",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":1,\n    \"name\":\"M&S\",\n    \"address\":\"311 Walworth Rd, London SE17 2TG, United Kingdom\",\n    \"departments\":\n        [\n            {\n                \"id\":1,\n                \"organizationId\":1,\n                \"name\":\"C&H\",\n                \"employees\":\n                    [\n                        {\n                        \"id\":1,\n                        \"organizationId\":1,\n                        \"departmentId\":1,\n                        \"name\":\"Dileep Gadiraju\",\n                        \"age\":43,\n                        \"position\":\"EA\"\n                        }\n                    ]\n            }\n        ]\n    ,\n    \"employees\":[\n                    {\n                        \"id\":1,\n                        \"organizationId\":1,\n                        \"departmentId\":1,\n                        \"name\":\"Dileep Gadiraju\",\n                        \"age\":43,\n                        \"position\":\"EA\"\n                        }\n    ]\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/organizations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"organizations"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
