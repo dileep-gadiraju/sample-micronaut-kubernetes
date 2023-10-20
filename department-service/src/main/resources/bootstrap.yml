@@ -4,7 +4,7 @@ micronaut:
   config-client:
     enabled: true
   server:
-    port: 8090
+    port: 8091
 
 kubernetes:
   client:
@@ -27,7 +27,7 @@ kafka:
     security:
       protocol: SASL_SSL
   health:
-    enabled: true
+    enabled: false
   consumers:
     default:
       session:

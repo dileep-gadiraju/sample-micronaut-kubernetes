@@ -43,3 +43,4 @@ The following picture illustrates the architecture described above including Kub
 ## Useful commands
 - zookeeper-server-start /Users/xxx/kafka/zookeeper.properties
 - kafka-server-start /Users/xxx/kafka/server.properties
+- mvn package -Dpackaging=docker

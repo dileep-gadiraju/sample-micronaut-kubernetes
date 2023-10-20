@@ -12,7 +12,7 @@
     <artifactId>organization-service</artifactId>
 
     <properties>
-        <exec.mainClass>pl.piomin.services.pl.piomin.services.employee.EmployeeApplication</exec.mainClass>
+        <exec.mainClass>pl.piomin.services.organization.OrganizationApplication</exec.mainClass>
         <sonar.moduleKey>${artifactId}</sonar.moduleKey>
         <micronaut.test.resources.enabled>true</micronaut.test.resources.enabled>
     </properties>

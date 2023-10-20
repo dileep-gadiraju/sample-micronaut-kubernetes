@@ -12,8 +12,8 @@
     <artifactId>department-service</artifactId>
 
     <properties>
-        <exec.mainClass>pl.piomin.services.employee.DepartmentApplication</exec.mainClass>
-        <sonar.moduleKey>${artifactId}</sonar.moduleKey>
+        <exec.mainClass>pl.piomin.services.department.DepartmentApplication</exec.mainClass>
+        <sonar.moduleKey>${project.artifactId}</sonar.moduleKey>
         <micronaut.test.resources.enabled>true</micronaut.test.resources.enabled>
     </properties>
 

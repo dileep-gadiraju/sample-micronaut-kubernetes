@@ -3,6 +3,8 @@ micronaut:
     name: organization
   config-client:
     enabled: true
+  server:
+    port: 8090
 
 kubernetes:
   client:
