@@ -15,3 +15,8 @@ kubernetes:
       enabled: true
       labels:
         - app: organization
+
+mongodb:
+  uri: mongodb://localhost:27017/local
+  database: local
+  collection: organisations

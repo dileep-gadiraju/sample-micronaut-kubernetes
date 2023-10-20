@@ -44,3 +44,8 @@ The following picture illustrates the architecture described above including Kub
 - zookeeper-server-start /Users/xxx/kafka/zookeeper.properties
 - kafka-server-start /Users/xxx/kafka/server.properties
 - mvn package -Dpackaging=docker
+
+## Run Standalone Apps
+1. `cd employee-service && mvn clean mn:run`  [employees endpoint](http://localhost:8092/employees)
+2. `cd department-service && mvn clean mn:run` [departments endpoint](http://localhost:8091/departments)
+3. `cd organization-service && mvn clean mn:run`  [organizations endpoint](http://localhost:8090/organizations)
