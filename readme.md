@@ -49,3 +49,9 @@ The following picture illustrates the architecture described above including Kub
 1. `cd employee-service && mvn clean mn:run`  [employees endpoint](http://localhost:8092/employees)
 2. `cd department-service && mvn clean mn:run` [departments endpoint](http://localhost:8091/departments)
 3. `cd organization-service && mvn clean mn:run`  [organizations endpoint](http://localhost:8090/organizations)
+
+## Build native Docker Images from Intellij
+1. From Manven tag navigate to plugins>mn>mn:dockerNative
+2. `docker tag organization:latest docker.io/piomin/organization:latest`
+3. Load Docker image to k8s cluster `kind load docker-image docker.io/piomin/organization --name local-k8s`
+4. `cd organization-service\k8s && kubectl create -f deployment.yaml `
