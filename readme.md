@@ -54,4 +54,5 @@ The following picture illustrates the architecture described above including Kub
 1. From Manven tag navigate to plugins>mn>mn:dockerNative
 2. `docker tag organization:latest docker.io/piomin/organization:latest`
 3. Load Docker image to k8s cluster `kind load docker-image docker.io/piomin/organization --name local-k8s`
+4. `docker exec local-k8s-control-plane crictl images`
 4. `cd organization-service\k8s && kubectl create -f deployment.yaml `
