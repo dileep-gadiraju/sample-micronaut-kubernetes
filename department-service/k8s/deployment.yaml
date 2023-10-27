@@ -46,7 +46,8 @@ spec:
     spec:
       containers:
         - name: department
-          image: piomin/department
+          image: docker.io/piomin/department:latest
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
 ---

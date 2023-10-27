@@ -38,7 +38,8 @@ spec:
     spec:
       containers:
         - name: organization
-          image: piomin/organization
+          image: docker.io/piomin/organization:latest
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
 ---
