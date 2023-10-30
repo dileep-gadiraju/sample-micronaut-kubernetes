@@ -56,3 +56,8 @@ The following picture illustrates the architecture described above including Kub
 3. Load Docker image to k8s cluster `kind load docker-image docker.io/piomin/organization --name local-k8s`
 4. `docker exec local-k8s-control-plane crictl images`
 4. `cd organization-service\k8s && kubectl create -f deployment.yaml `
+
+## Manual Docker build & K8s Deployment
+1. `cd organization-service && sudo docker build -t organization-service:1.0-latest .`
+2. `kind load docker-image organization-service:1.0-latest --name local-k8s`
+3. `kubectl create -f ./k8s/deployment.yaml`
